@@ -84,4 +84,4 @@
         })
         $('.parallax-window').parallax({imageSrc: './images/hero.jpg'});
     });
-}(jQuery));
+})(jQuery);
