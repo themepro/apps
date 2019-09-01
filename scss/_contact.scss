@@ -1,0 +1,50 @@
+
+/*===========================
+    4.Contact css start
+===========================*/
+
+
+#contact {
+    background-image: linear-gradient(219.3deg, rgba(149, 0, 199, 1) 4.7%, rgba(130, 0, 226, 1) 22.9%, rgba(95, 0, 199, 1) 43.2%, rgba(70, 0, 199, 1) 63.9%, rgba(5, 0, 199, 1) 85.1%, rgba(0, 95, 199, 1) 106.8%);
+    padding: 85px 0;
+  
+    .form-control{
+      width: 100%;
+      background: transparent;
+      border: 1px solid #fff;
+      margin: 10px 0;
+      height: 50px;
+      border-radius: 3px;
+      color: #fff;
+      padding: 0 10px;
+      font-size: 18px;
+    }
+    textarea.form-control {
+      height: 150px;
+      padding-top: 10px;
+    }
+    ::placeholder{
+      color: #fff;
+    }
+    .main_button{
+      text-align: center;
+      background: #f5865d;
+      border: none;
+      padding: 15px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      color: #000;
+      transition: all ease-in-out 0.3s;
+      font-family: $montserrat;
+      font-weight: 600;
+      font-size: 20px;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+  
+
+  /*===========================
+    4.Contact css end
+===========================*/

@@ -1,0 +1,32 @@
+
+/*===========================
+    4.Footer css start
+===========================*/
+
+.footer{
+    background: #fff;
+    padding: 40px 0;
+    color: #000;
+    text-align: center;
+      a {
+        padding: 10px;
+        display: block;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+        &:hover{
+          color: #f5865d;
+        }
+      }
+      p{
+        a{
+          color: #f5865d;
+          display: inline;
+        }
+      }
+  
+  }
+
+  /*===========================
+    4.Footer css end
+===========================*/
+  

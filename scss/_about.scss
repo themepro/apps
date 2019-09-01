@@ -1,0 +1,72 @@
+
+
+/*===========================
+    4.About css start
+===========================*/
+
+
+
+#about {
+    background-image: linear-gradient(219.3deg, rgba(149, 0, 199, 1) 4.7%, rgba(130, 0, 226, 1) 22.9%, rgba(95, 0, 199, 1) 43.2%, rgba(70, 0, 199, 1) 63.9%, rgba(5, 0, 199, 1) 85.1%, rgba(0, 95, 199, 1) 106.8%);
+  
+    p {
+      color: #fff;
+      font-size: 21px;
+      line-height: 28px;
+      font-family: $lato;
+      font-weight: 400;
+  
+    }
+  }
+  
+  h2 {
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  .personal-info {
+    display: inline-block;
+  }
+  
+  .personal-info>li {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #fff;
+    width: 49%;
+    font-family: $montserrat;
+    position: relative;
+  
+    &::after {
+      background: #fff;
+      border-radius: 10px;
+      content: '';
+      height: 6px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+    }
+  
+    span {
+      font-weight: 600;
+      color: #dddddd;
+      vertical-align: middle;
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .personal-info>li {
+      width: 100%;
+    }
+  }
+  
+  /*===========================
+    4.About css end
+===========================*/

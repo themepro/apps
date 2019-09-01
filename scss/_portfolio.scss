@@ -1,0 +1,174 @@
+
+/*===========================
+    4.portfoliocss start
+===========================*/
+
+
+#portfolio {
+    background-image: linear-gradient(243.4deg, rgba(0, 215, 206, 1) 13%, rgba(0, 132, 255, 1) 98%);
+  
+  }
+  
+  /* ---- grid ---- */
+  
+  // .grid {
+  //   background: #DDD;
+  // }
+  
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .grid-item ---- */
+  
+  
+  
+  
+  // .grid-sizer,
+  // .grid-item {
+  //   width: 50%;
+  //   box-sizing: border-box;
+  // }
+  
+  
+  
+  .grid-height2 img {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .grid-height3 img {
+    width: 100%;
+  }
+  
+  .filter-part button {
+    padding: 5px;
+    margin: 15px 10px;
+    border: none;
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all linear 0.2s;
+    position: relative;
+  
+    &:hover {
+      color: #fff;
+    }
+  
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      transition: all linear 0.2s;
+      height: 2px;
+      background: #fff;
+    }
+  
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  
+  .filter-part .current {
+    color: #fff;
+  
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      transition: all linear 0.2s;
+      height: 2px;
+      background: #fff;
+    }
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    z-index: 1;
+  
+    img {
+      transform: scale(1.2);
+      transition: all ease-in-out 0.2s;
+    }
+  
+    &:hover img {
+      transform: scale(1.4);
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 42, 47, 0.85);
+      transform: scale(0);
+      transition: all ease-in-out 0.2s;
+      z-index: 1;
+  
+      i {
+        color: #fff;
+        font-size: 35px;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translateX(-50%);
+      }
+  
+      h3 {
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        right: 10%;
+        transform: translateX(-50);
+        bottom: 20%;
+        font-size: 18px;
+        font-family: $montserrat;
+        text-transform: capitalize;
+        font-weight: 600;
+        opacity: 1;
+        letter-spacing: 2px;
+  
+        &::after {
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: -50%;
+          width: 50%;
+          height: 2px;
+          background: #fff;
+        }
+      }
+    }
+  
+    &:hover .overlay {
+      transform: scale(0.95);
+    }
+  }
+
+  .grid-item {
+    width: 31.33%;
+    box-sizing: border-box;
+  }
+  @media (max-width: 767px) {
+    .grid-item {
+      width: 100% !important;
+    }
+  }
+  
+  /*===========================
+    4.Portfolio css end
+===========================*/
