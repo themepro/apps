@@ -70,7 +70,7 @@
     $(window).on('load', function () {
 
         $.fakeLoader({
-            timeToHide: 1200,
+            timeToHide: 500,
             bgColor: "#34495e",
             spinner: "spinner5"
         });
